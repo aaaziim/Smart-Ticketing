@@ -1,14 +1,126 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart Ticketing</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>P-Ticket | PH Paribahan</title>
+    <!-- daisyUI & tailwind -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+    <!-- custom style -->
+    <style>
+        .text-raleway {
+            font-family: "Raleway", sans-serif;
+        }
+
+        .text-inter {
+            font-family: "Inter", sans-serif;
+        }
+    </style>
 </head>
 
-<body>
+<body class="text-raleway">
+    <header class="container mx-auto">
+        <nav>
+            <div class="navbar">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-lg font-medium text-[#030712b3]">
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Destination</a></li>
+                            <li><a>Search</a></li>
+                        </ul>
+                    </div>
+                    <a class="text-4xl font-extrabold text-[#030712]">P-Ticket</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 text-lg font-medium text-[#030712b3]">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Destination</a></li>
+                        <li><a>Search</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <a href="#buy-ticket">
+                        <div class="flex gap-3 border border-[#1dd10066] bg-[#1dd1001a] rounded-xl px-7 py-4">
+                            <span class="text-[#1DD100] font-bold">Bus</span>
+                            <img src="images/bus-icon.png" alt="" />
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <!-- Hero Banner Start-->
+        <section
+            class="bg-[url('images/banner.png')] bg-no-repeat bg-cover bg-center rounded-3xl p-5 lg:p-32 m-2 lg:m-0 lg:relative">
+            <div>
+                <h1 class="text-2xl lg:text-6xl text-center font-extrabold text-white">
+                    End-to-End Travel with
+                </h1>
+                <h2 class="text-2xl lg:text-6xl text-center font-extrabold text-[#1DD100]">
+                    P Paribahan
+                </h2>
+                <p class="mx-auto text-base lg:text-lg text-white lg:w-1/2 text-center">
+                    Easy online booking, modern comfort, punctuality guaranteed.
+                    Friendly staff, comprehensive routes—every mile a pleasure.
+                </p>
+            </div>
+            <div class="flex justify-center mt-5">
+                <a href="#buy-ticket"
+                    class="btn bg-[#1DD100] border-[#1DD100] text-[#030712] text-base lg:text-xl font-bold">
+                    Buy Tickets
+                </a>
+            </div>
+        </section>
+        <!-- Hero Banner End-->
 
+        <!-- Floating Cards Start -->
+
+        <div class="text-inter flex lg:flex-row flex-col gap-6 justify-center bottom-6 lg:relative lg:-top-16">
+            <div class="flex gap-4 border-b-[3px] border-[#1cd100] rounded-[24px] p-8 bg-white">
+                <img src="images/people.png" alt="" />
+                <div>
+                    <p class="text-[#030712] text-4xl font-bold">500K+</p>
+                    <p class="text-[#03071299] text-lg">Registered users</p>
+                </div>
+            </div>
+            <div class="flex gap-4 border-b-[3px] border-[#1cd100] rounded-[24px] p-8 bg-white">
+                <img src="images/ticket-cupon.png" alt="" />
+                <div>
+                    <p class="text-[#030712] text-4xl font-bold">1.7 lacks</p>
+                    <p class="text-[#03071299] text-lg">Tickets sold</p>
+                </div>
+            </div>
+            <div class="flex gap-4 border-b-[3px] border-[#1cd100] rounded-[24px] p-8 bg-white">
+                <img src="images/stoppage.png" alt="" />
+                <div>
+                    <p class="text-[#030712] text-4xl font-bold">80K+</p>
+                    <p class="text-[#03071299] text-lg">Rental partners</p>
+                </div>
+            </div>
+        </div>
+        <!-- Floating Cards End -->
+
+    </header>
+    <main></main>
+    <script src="booking.js"></script>
 </body>
 
 </html>
